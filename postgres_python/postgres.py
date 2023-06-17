@@ -19,7 +19,6 @@ while True:
 
 i = 0
 fake = Faker('en_US')
-#for i in range(10):
 while True:
     LOGGER.info(f"Inserting record number {i+1}")
     user_id = fake.random_int(min=1, max=200)
