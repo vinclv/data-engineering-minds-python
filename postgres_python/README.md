@@ -8,7 +8,7 @@ docker-compose -f docker-compose.yaml up -d
 ### To run the python app locally
 
 * Replace *postgres* with *localhost* for the host in SQLAlchemy [*create_engine*](https://github.com/vinclv/data-engineering-minds-python/blob/main/postgres_python/postgres.py#L6).
-* Install virtual environment, requirements and then run the python script.
+* Install virtual environment, requirements and then run the python script as below:
 ```
 pip3 install virtualenv virtualenvwrapper
 python3 -m venv venv
