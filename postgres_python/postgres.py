@@ -9,6 +9,8 @@ LOGGER = logging.getLogger(__name__)
 def get_db_engine():
     return create_engine('postgresql://{}:{}@{}/{}'.format('postgres', 'postgres', 'postgres:5432', 'oltp_db'))
 
+
+#retry mechanism for connect to database
 while True:
     try:
         db_engine = get_db_engine().connect()
