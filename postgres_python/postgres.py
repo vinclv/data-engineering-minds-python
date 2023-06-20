@@ -1,7 +1,7 @@
 from sqlalchemy import create_engine
 from sqlalchemy import text
 from faker import Faker
-import logging
+import logging, time
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 LOGGER = logging.getLogger(__name__)
@@ -29,6 +29,8 @@ while True:
     db_engine.execute(text(insert_query).execution_options(autocommit=True))
     LOGGER.info(f"Completed inserting record number {i+1}")
     i = i + 1
+    if i % 10 == 0:
+        time.sleep(10)
 
 db_engine.close()
 
