@@ -19,5 +19,5 @@ python3 postgres.py
 ```
 ### Note
 * I would recommend to use either Python 3.6 or Python 3.9.
-* The detailed step-by-step implementation can be found on my YouTube video.
+* The detailed step-by-step implementation can be found on my [YouTube video](https://www.youtube.com/watch?v=Pox10kU7d2c).
   `
