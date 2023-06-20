@@ -6,6 +6,7 @@ import logging, time
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 LOGGER = logging.getLogger(__name__)
 
+#create_engine => username, password, hostname:port, database
 def get_db_engine():
     return create_engine('postgresql://{}:{}@{}/{}'.format('postgres', 'postgres', 'postgres:5432', 'oltp_db'))
 
